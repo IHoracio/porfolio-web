@@ -1,6 +1,7 @@
-import './App.css'
+import './styles/index.css'
 import Footer from './components/layout/Footer'
 import Header from './components/layout/Header'
+import Body from './components/layout/Body'
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
   return (
     <>
     <Header />
-     <h1 className={"titulo"}>MMM</h1>
+    <Body />
     <Footer />
     </>
   )

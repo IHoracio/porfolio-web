@@ -1,6 +1,20 @@
-import './Header.css';
+import '../../styles/index.css';
 
-function Header(){
+function Header() {
 
+  return (
+    <div className="bg-gray-700 p-5 flex justify-between items-center">
+      <span className="text-blue-100 ml-15">mariomartinmorilla.es</span>
+      <div className="mr-15">
+        <button
+          type="button"
+          className="text-[1rem]"
+        >
+          EN / ES
+        </button>
+      </div>
+    </div>
+  );
 }
-export default Header
+
+export default Header;
