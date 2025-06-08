@@ -4,7 +4,7 @@ function Header() {
 
   return (
     <div className="bg-gray-700 p-5 flex justify-between items-center">
-      <span className="text-blue-100 ml-15">mariomartinmorilla.es</span>
+      <span className="text-blue-100 md:ml-15">mariomartinmorilla.es</span>
       <div className="mr-15">
         <button
           type="button"

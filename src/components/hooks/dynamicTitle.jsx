@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 export default function UltraSmoothTitleAnimation() {
   const [displayText, setDisplayText] = useState("MMM");
   const animationRef = useRef(null);
-  const targetText = "Mario Martin Morilla";
+  const targetText = "Mario Martín Morilla";
   const transitionDuration = 2000;
   const delayBeforeStart = 0;
 
@@ -19,7 +19,6 @@ export default function UltraSmoothTitleAnimation() {
       const targetLength = targetText.length;
       let newLength = Math.floor(3 + (targetLength - 3) * easeInOutCubic(progress));
 
-      // Salta directo de "Mario Martin Morill" a "Mario Martin Morilla"
       if (newLength === targetLength - 1) {
         newLength = targetLength;
       }
@@ -53,7 +52,8 @@ export default function UltraSmoothTitleAnimation() {
 
   return (
     <h1 
-      className="text-8xl font-bold text-center mt-35"
+      className="text-4xl font-bold text-center mt-15 lg:text-9xl lg:mt-20 md:text-7xl
+      md:mt-35"
       style={{
         opacity: displayText === "MMM" ? 1 : 0.98,
         transform: displayText === "MMM" ? 'scale(1)' : 'scale(1.008)',
