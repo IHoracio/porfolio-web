@@ -12,7 +12,7 @@ export default function SobreMi() {
     <>
       <button 
         onClick={handleDownloadCV} 
-        className="block mx-auto bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition-colors mt-8 mb-6"
+        className="block mx-auto bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition-colors mt-8 mb-6 md:mt-23 lg:mt-20"
       >
         Descargar CV
       </button>
