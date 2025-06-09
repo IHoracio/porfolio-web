@@ -51,7 +51,7 @@ export default function SobreMi() {
         </a>
 
         <a 
-          href="mailto:tucorreo@ejemplo.com" 
+          href="mailto:mariomartinmorilla@gmail.com" 
           className="bg-red-300 hover:bg-red-400 text-white p-3 rounded-full transition-colors flex items-center gap-2"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
