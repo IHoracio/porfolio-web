@@ -52,13 +52,12 @@ export default function UltraSmoothTitleAnimation() {
 
   return (
     <h1 
-      className="text-4xl font-bold text-center mt-15 lg:text-9xl lg:mt-20 md:text-7xl
-      md:mt-35"
+      className="text-4xl font-bold text-blue-50 text-center mt-8 lg:text-9xl lg:mt-20 md:text-7xl md:mt-10"
       style={{
         opacity: displayText === "MMM" ? 1 : 0.98,
         transform: displayText === "MMM" ? 'scale(1)' : 'scale(1.008)',
         textShadow: displayText !== "MMM" 
-          ? '0 0 12px rgba(255, 255, 255, 0.6)' 
+          ? '0 0 12px rgba(100, 200, 255, 0.8)' 
           : 'none',
         transition: 'all 0.15s cubic-bezier(0.33, 1, 0.68, 1)',
         whiteSpace: 'nowrap'
