@@ -113,7 +113,7 @@ export default function SobreMi() {
           <span className="text-xs sm:text-sm font-medium">GitHub</span>
         </motion.a>
         <motion.a
-          href="mailto:mariomartinmorilla@gmail.com"
+          href="https://www.linkedin.com/in/mariomartinmorilla/"
           variants={buttonVariants}
           whileHover="hover"
           whileTap="tap"
