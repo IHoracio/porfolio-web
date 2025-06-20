@@ -35,7 +35,7 @@ export default function Proyectos() {
     <section id="proyectos" className="py-12 px-4 md:px-8 lg:px-16">
       <div className="relative">
         <h3 
-          className="text-3xl font-bold text-center mt-10 md:text-5xl md:mt-15 lg:text-7xl relative"
+          className="text-3xl font-bold text-center mt-1 md:text-5xl md:mt-7 lg:text-7xl relative"
           style={{
             opacity: 1,
             transform: 'scale(1)',
