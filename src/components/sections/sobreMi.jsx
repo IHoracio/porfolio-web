@@ -1,11 +1,8 @@
 import profilePic from '../../assets/images/profile.png'
 import aureola from '../../assets/images/aureolaBlue.png';
-import es from '../../translations/es';
-import en from '../../translations/en';
-import { useLanguage } from '../../contexts/LanguageContext.jsx';
+import useTranslations from '../hooks/useTranslations';
 export default function SobreMi() {
-  const { language } = useLanguage();
-  const t = language === 'es' ? es : en;
+  const t = useTranslations();
 
   return (
     <>

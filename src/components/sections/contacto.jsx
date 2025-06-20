@@ -1,11 +1,8 @@
 import cv from '../../assets/documents/CV-MarioMartinMorilla.pdf';
-import es from '../../translations/es';
-import en from '../../translations/en';
-import { useLanguage } from '../../contexts/LanguageContext.jsx';
+import useTranslations from '../hooks/useTranslations';
 
 export default function SobreMi() {
-    const { language } = useLanguage();
-    const t = language === 'es' ? es : en;
+  const t = useTranslations();
   const handleDownloadCV = () => {
     const link = document.createElement('a');
     link.href = cv;
