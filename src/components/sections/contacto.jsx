@@ -1,6 +1,11 @@
 import cv from '../../assets/documents/CV-MarioMartinMorilla.pdf';
+import es from '../../translations/es';
+import en from '../../translations/en';
+import { useLanguage } from '../../contexts/LanguageContext.jsx';
 
 export default function SobreMi() {
+    const { language } = useLanguage();
+    const t = language === 'es' ? es : en;
   const handleDownloadCV = () => {
     const link = document.createElement('a');
     link.href = cv;
@@ -14,7 +19,7 @@ export default function SobreMi() {
         onClick={handleDownloadCV} 
         className="block mx-auto bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition-colors mt-8 mb-6 md:mt-23 lg:mt-20"
       >
-        Descargar CV
+        {t.downloadCV}
       </button>
 
       <div className="flex justify-center gap-4 mt-6 flex-wrap">

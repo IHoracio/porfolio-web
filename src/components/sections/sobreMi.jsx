@@ -1,6 +1,12 @@
 import profilePic from '../../assets/images/profile.png'
 import aureola from '../../assets/images/aureolaBlue.png';
+import es from '../../translations/es';
+import en from '../../translations/en';
+import { useLanguage } from '../../contexts/LanguageContext.jsx';
 export default function SobreMi() {
+  const { language } = useLanguage();
+  const t = language === 'es' ? es : en;
+
   return (
     <>
       <div className="relative">
@@ -13,12 +19,12 @@ export default function SobreMi() {
             textShadow: "0 0 10px rgba(180, 210, 255, 0.8)",
           }}
         >
-          &lt;Contactame 😁/&gt;
+          &lt;{t.contactTitle}/&gt;
         </h3>
       </div>
       <img src={profilePic} alt="Imagen de Perfil" className="w-36 h-36 rounded-lg shadow-md border-2 border-gray-300 object-cover mx-auto mt-10 md:w-64 md:h-64 lg:mt-15" style={{ objectPosition: "50% 0%" }} />
       <p className="font-mono ml-10 mr-10 text-center text-lg mt-10 md:text-xl md:mt-10 lg:ml-60 lg:mr-60">
-        ¡Hola! Soy Mario, un apasionado desarrollador web con experiencia en la creación de aplicaciones modernas y eficientes. Me encanta aprender nuevas tecnologías y mejorar mis habilidades constantemente.
+        {t.aboutText}
       </p>
     </>
   );
