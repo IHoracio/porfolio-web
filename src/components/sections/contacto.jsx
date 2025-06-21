@@ -1,28 +1,34 @@
-import cv from '../../assets/documents/CV-MarioMartinMorilla.pdf';
-import useTranslations from '../hooks/useTranslations';
-import { FiDownload, FiGithub, FiLinkedin, FiPhone, FiMail } from 'react-icons/fi';
-import { motion } from 'framer-motion';
+import cv from "../../assets/documents/CV-MarioMartinMorilla.pdf";
+import useTranslations from "../hooks/useTranslations";
+import {
+  FiDownload,
+  FiGithub,
+  FiLinkedin,
+  FiPhone,
+  FiMail,
+} from "react-icons/fi";
+import { motion } from "framer-motion";
 
 export default function SobreMi() {
   const t = useTranslations();
-  
+
   const handleDownloadCV = () => {
-    const link = document.createElement('a');
+    const link = document.createElement("a");
     link.href = cv;
-    link.download = 'CV-MarioMartinMorilla.pdf';
+    link.download = "CV-MarioMartinMorilla.pdf";
     link.click();
   };
-  
+
   const buttonVariants = {
     hover: { y: -2 },
-    tap: { scale: 0.98 }
+    tap: { scale: 0.98 },
   };
 
   return (
     <div className="max-w-md mx-auto px-4 mt-10">
       {/* Botón Descargar CV */}
       <div className="flex justify-center mb-8 md:mb-10">
-        <motion.button 
+        <motion.button
           onClick={handleDownloadCV}
           variants={buttonVariants}
           whileHover="hover"
@@ -82,7 +88,9 @@ export default function SobreMi() {
           <div className="bg-green-500 p-2 rounded-full mb-2">
             <FiPhone className="text-xl" />
           </div>
-          <span className="text-xs sm:text-sm font-medium">+34 629 43 61 89</span>
+          <span className="text-xs sm:text-sm font-medium">
+            +34 629 43 61 89
+          </span>
         </motion.a>
 
         {/* Email */}
@@ -96,7 +104,9 @@ export default function SobreMi() {
           <div className="bg-blue-400 p-2 rounded-full mb-2">
             <FiMail className="text-xl" />
           </div>
-          <span className="text-[0.55rem] sm:text-sm font-medium">mariomartinmorilla@gmail.com</span>
+          <span className="text-[0.55rem] sm:text-sm font-medium">
+            mariomartinmorilla@gmail.com
+          </span>
         </motion.a>
       </div>
 
