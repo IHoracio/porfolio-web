@@ -96,7 +96,7 @@ export default function SobreMi() {
           <div className="bg-blue-400 p-2 rounded-full mb-2">
             <FiMail className="text-xl" />
           </div>
-          <span className="text-[0.6rem] sm:text-sm font-medium">mariomartinmorilla@gmail.com</span>
+          <span className="text-[0.55rem] sm:text-sm font-medium">mariomartinmorilla@gmail.com</span>
         </motion.a>
       </div>
 
@@ -141,7 +141,7 @@ export default function SobreMi() {
           className="flex items-center justify-center bg-blue-500 hover:bg-blue-400 text-white py-2 px-4 rounded-lg transition-all text-sm"
         >
           <FiMail className="mr-2" />
-          <span>Contactar por email</span>
+          <span>mariomartinmorilla@gmail.com</span>
         </motion.a>
       </div>
     </div>
