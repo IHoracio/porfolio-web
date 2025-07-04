@@ -7,7 +7,7 @@ export default {
   // Proyectos
   projects: {
     portfolio: {
-      title: "Personal Portfolio",
+      title: "Portfolio Personal",
       description: "Mi portfolio web desarrollado con React y Tailwind CSS, mostrando mis proyectos y habilidades.",
     }
   },
