@@ -26,7 +26,7 @@ export default function SobreMi() {
       <img
         src={profilePic}
         alt="Imagen de Perfil"
-        className="w-36 h-36 rounded-lg shadow-md border-2 border-gray-300 object-cover mx-auto mt-10 md:w-64 md:h-64 lg:mt-15"
+        className="w-[65cqw] h-[65cqw] sm:w-[40cqw] sm:h-[40cqw] md:w-[40cqw] md:h-[40cqw] lg:w-[20cqw] lg:h-[20cqw] rounded-lg shadow-md border-2 border-gray-300 object-cover mx-auto mt-10 lg:mt-15"
         style={{ objectPosition: "50% 0%" }}
       />
       <p className="font-mono ml-10 mr-10 text-center text-lg mt-10 md:text-xl md:mt-10 lg:ml-60 lg:mr-60">

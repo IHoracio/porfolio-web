@@ -54,7 +54,7 @@ export default function UltraSmoothTitleAnimation() {
 
   return (
     <h1
-      className="text-3xl font-bold text-blue-50 text-center mt-8 lg:text-9xl lg:mt-20 md:text-7xl md:mt-10"
+      className="text-[8cqw] font-bold text-blue-50 text-center mt-8 lg:mt-20 md:mt-10"
       style={{
         opacity: displayText === "MMM" ? 1 : 0.98,
         transform: displayText === "MMM" ? "scale(1)" : "scale(1.008)",
