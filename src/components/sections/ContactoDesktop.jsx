@@ -40,7 +40,7 @@ export default function ContactoDesktop({
           variants={buttonVariants}
           whileHover="hover"
           whileTap="tap"
-          className="flex items-center justify-center bg-green-700 hover:bg-green-600 text-white py-2 px-4 rounded-lg transition-all text-sm flex-1 cursor-pointer"
+          className="flex items-center justify-center bg-green-600 hover:bg-green-500 text-white py-2 px-4 rounded-lg transition-all text-sm flex-1 cursor-pointer"
         >
           <FiPhone className="mr-2" />
           <span>+34 629 43 61 89</span>
@@ -64,7 +64,7 @@ export default function ContactoDesktop({
           target="_blank"
           whileHover="hover"
           whileTap="tap"
-          className="flex items-center justify-center bg-blue-500 hover:bg-blue-400 text-white py-2 px-4 rounded-lg transition-all text-sm flex-1 cursor-pointer"
+          className="flex items-center justify-center bg-blue-400 hover:bg-blue-300 text-white py-2 px-4 rounded-lg transition-all text-sm flex-1 cursor-pointer"
         >
           <FiMail className="mr-2" />
           <span>mariomartinmorilla@gmail.com</span>
