@@ -1,5 +1,17 @@
 import { FiGithub, FiLinkedin, FiPhone, FiMail, FiCopy } from "react-icons/fi";
 import { motion } from "framer-motion";
+import React from "react";
+
+interface ContactoDesktopProps {
+  buttonVariants: {
+    hover: { y: number };
+    tap: { scale: number };
+  };
+  copiedPhone: boolean;
+  copiedEmail: boolean;
+  handleCopyPhone: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  handleCopyEmail: (e: React.MouseEvent<HTMLButtonElement>) => void;
+}
 
 export default function ContactoDesktop({
   buttonVariants,
@@ -7,7 +19,7 @@ export default function ContactoDesktop({
   copiedEmail,
   handleCopyPhone,
   handleCopyEmail,
-}) {
+}: ContactoDesktopProps) {
   return (
     <div className="mt-6 hidden md:contents space-y-3">
       <motion.a

@@ -1,27 +1,23 @@
-# Portfolio Web 👨‍💻
-
-[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)]()
+# Portfolio Web
 [![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)]()
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)]()
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)]()
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)]()
 
-Portfolio web personal desarrollado con React + Vite, utilizando JavaScript y Tailwind CSS para los estilos.
+Personal web portfolio built with **React + Vite**, using **TypeScript** and **Tailwind CSS**
 
-## 🚀 Características
+## Features
+- **Responsive** and modern design
+- **Featured projects** section
+- Accessible **contact information**
+- **Animations** and interactive effects
+- **Easy customization**
 
-- Diseño responsive y moderno
-- Sección de proyectos destacados
-- Información de contacto accesible
-- Animaciones y efectos interactivos
-- Fácil personalización
+## Projects Included
+In my portfolio, I showcase my **personal programming projects**
 
-## 📦 Proyectos Incluidos
-
-En mi portfolio muestro mis proyectos personales de programación
-
-## 🛠️ Instalación
-
-Para ejecutar localmente:
-
+## Installation
+To run locally:
 ```bash
 git clone git@github.com:IHoracio/porfolio-web.git
 cd portfolio-web

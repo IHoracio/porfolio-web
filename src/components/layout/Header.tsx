@@ -1,5 +1,5 @@
 import "../../styles/index.css";
-import { useLanguage } from "../../contexts/LanguageContext.jsx";
+import { useLanguage } from "../../contexts/LanguageContext.js";
 
 function Header() {
   const { language, toggleLanguage } = useLanguage();

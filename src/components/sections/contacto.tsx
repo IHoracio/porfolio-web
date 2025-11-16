@@ -3,8 +3,10 @@ import useTranslations from "../hooks/useTranslations";
 import { FiDownload } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import React from "react";
 import ContactoMobile from "./ContactoMobile";
 import ContactoDesktop from "./ContactoDesktop";
+
 
 export default function SobreMi() {
   const t = useTranslations();
@@ -18,14 +20,14 @@ export default function SobreMi() {
     link.click();
   };
 
-  const handleCopyPhone = (e) => {
+  const handleCopyPhone = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     navigator.clipboard.writeText("+34629436189");
     setCopiedPhone(true);
     setTimeout(() => setCopiedPhone(false), 2000);
   };
 
-  const handleCopyEmail = (e) => {
+  const handleCopyEmail = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     navigator.clipboard.writeText("mariomartinmorilla@gmail.com");
     setCopiedEmail(true);

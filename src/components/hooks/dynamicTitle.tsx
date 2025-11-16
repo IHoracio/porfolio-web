@@ -2,16 +2,16 @@ import { useState, useEffect, useRef } from "react";
 
 export default function UltraSmoothTitleAnimation() {
   const [displayText, setDisplayText] = useState("MMM");
-  const animationRef = useRef(null);
-  const targetText = "Mario Martín Morilla";
+  const animationRef = useRef<number | null>(null);
+  const targetText: string = "Mario Martín Morilla";
   const transitionDuration = 2000;
   const delayBeforeStart = 0;
 
   useEffect(() => {
-    let startTime = null;
+    let startTime: number | null = null;
     let currentLength = 3;
 
-    const animate = (timestamp) => {
+    const animate = (timestamp: number) => {
       if (!startTime) startTime = timestamp;
       const elapsed = timestamp - startTime;
       const progress = Math.min(elapsed / transitionDuration, 1);
@@ -44,11 +44,13 @@ export default function UltraSmoothTitleAnimation() {
 
     return () => {
       clearTimeout(timer);
-      cancelAnimationFrame(animationRef.current);
+      if (animationRef.current !== null) {
+        cancelAnimationFrame(animationRef.current);
+      }
     };
   }, []);
 
-  const easeInOutCubic = (t) => {
+  const easeInOutCubic = (t: number) => {
     return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
   };
 

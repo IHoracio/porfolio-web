@@ -1,27 +1,36 @@
 import useTranslations from "../hooks/useTranslations";
-import portfolioImage from "../../assets/images/portfolio-screenshot.png";
+import portfolioImage from "../../assets/images/proyects/portfolioScreenshot.png";
 import { FaReact, FaGithub } from "react-icons/fa";
-import { SiVite, SiTailwindcss } from "react-icons/si";
+import { SiVite, SiTailwindcss, SiTypescript } from "react-icons/si";
 
-const projectsData = [
+interface Project {
+  id: string;
+  technologies: string[];
+  image: string;
+  githubUrl: string;
+  demoUrl: string;
+}
+
+const projectsData: Project[] = [
   {
     id: "portfolio",
-    technologies: ["React", "Vite", "Tailwind CSS", "JavaScript"],
+    technologies: ["React", "Vite", "Tailwind CSS", "TypeScript"],
     image: portfolioImage,
     githubUrl: "https://github.com/IHoracio/porfolio-web",
     demoUrl: "https://mariomartinmorilla.es",
   },
 ];
+
 export default function Proyectos() {
   const t = useTranslations();
   // Traducciones
   const projects = projectsData.map((project) => ({
     ...project,
-    title: t.projects[project.id].title,
-    description: t.projects[project.id].description,
+    title: t.projects[project.id as keyof typeof t.projects].title,
+    description: t.projects[project.id as keyof typeof t.projects].description,
   }));
 
-  const getTechIcon = (tech) => {
+  const getTechIcon = (tech: string) => {
     switch (tech) {
       case "React":
         return <FaReact className="text-blue-400" />;
@@ -29,8 +38,8 @@ export default function Proyectos() {
         return <SiVite className="text-purple-500" />;
       case "Tailwind CSS":
         return <SiTailwindcss className="text-cyan-400" />;
-      case "JavaScript":
-        return <span className="text-yellow-400">JS</span>;
+      case "TypeScript":
+        return <SiTypescript className="text-blue-500" />;
       default:
         return <span className="text-gray-300">{tech}</span>;
     }

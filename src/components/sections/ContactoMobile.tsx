@@ -1,7 +1,14 @@
 import { FiGithub, FiLinkedin, FiPhone, FiMail } from "react-icons/fi";
 import { motion } from "framer-motion";
 
-export default function ContactoMobile({ buttonVariants }) {
+interface ContactoMobileProps {
+  buttonVariants: {
+    hover: { y: number };
+    tap: { scale: number };
+  };
+}
+
+export default function ContactoMobile({ buttonVariants }: ContactoMobileProps) {
   return (
     <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4">
       <motion.a
